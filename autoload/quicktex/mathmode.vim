@@ -1,13 +1,18 @@
 " Set the asymmetric delimiters for math mode. The $ $ and the $$ $$ delimiters
 " are handled separately, as they are symmetric. The ending braces are omitted
 " in order to match the *-variants.
-let s:mathModes = [['\(',                 '\)'               ],
-                  \['\[',                 '\]'               ],
-                  \['\begin{equation',    '\end{equation'    ],
-                  \['\begin{displaymath', '\end{displaymath' ],
-                  \['\begin{multline',    '\end{multline'    ],
-                  \['\begin{gather',      '\end{gather'      ],
-                  \['\begin{align',       '\end{align'       ]]
+let s:mathModes = [['\(',                 '\)'                   ],
+                  \['\[',                 '\]'                   ],
+                  \['\begin{equation}',    '\end{equation}'      ],
+                  \['\begin{displaymath}', '\end{displaymath}'   ],
+                  \['\begin{multline}',    '\end{multline}'      ],
+                  \['\begin{gather}',      '\end{gather}'        ],
+                  \['\begin{align}',       '\end{align}'         ],
+                  \['\begin{equation*}',    '\end{equation*}'    ],
+                  \['\begin{displaymath*}', '\end{displaymath*}' ],
+                  \['\begin{multline*}',    '\end{multline*}'    ],
+                  \['\begin{gather*}',      '\end{gather*}'      ],
+                  \['\begin{align*}',       '\end{align*}'       ]]
 
 " Detects to see if the user is inside math delimiters or not
 function! quicktex#mathmode#InMathMode()
