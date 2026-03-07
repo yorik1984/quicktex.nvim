@@ -3,6 +3,7 @@
 " in order to match the *-variants.
 let s:mathModes = [['\(',                 '\)'                   ],
                   \['\[',                 '\]'                   ],
+                  \['$$',                 '$$'                   ],
                   \['\begin{equation}',    '\end{equation}'      ],
                   \['\begin{displaymath}', '\end{displaymath}'   ],
                   \['\begin{multline}',    '\end{multline}'      ],
